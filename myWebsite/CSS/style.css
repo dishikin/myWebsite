@@ -1,0 +1,160 @@
+
+html{
+  scroll-behavior: smooth;
+}
+
+.nav-bar{
+  color: #F7F7F7;
+  font-size: 14px;
+  position: sticky;
+  top: 90%;
+}
+
+.nav-bar ul{
+  display: flex;
+}
+
+.nav-bar ul li{
+  position: relative;
+  display: inline-block;
+  margin: 10px 50px;
+  list-style: none;
+  z-index: 1;
+}
+
+.nav-bar ul li a{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #F7F7F7;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+}
+
+.nav-bar ul li a:hover{
+  color:#FF7800;
+}
+
+.nav-bar ul li a .icon{
+  position: relative;
+  display: block;
+  transition: 0.5s;
+}
+
+.nav-bar ul li:hover a .icon{
+  transform: translateY(-10px);
+}
+
+.nav-bar ul li a .text{
+  position: absolute;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.nav-bar ul li:hover a .text{
+  opacity: 1;
+}
+
+
+html body{
+  margin: 0;
+  font-family: 'Roboto Mono', monospace;
+}
+.top-container{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2C272E;
+  width: 100%;
+  height: 790px;
+}
+.land-sentence{
+  position:absolute;
+  color: #F7F7F7;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: 'Roboto Mono', monospace;
+}
+.intro{
+  font-size: 50px;
+  line-height: 5px;
+}
+.iam{
+  font-size: 50px;
+  line-height: 5px;
+}
+
+.name{
+  color:#FF7800;
+}
+
+.about-me{
+  position:absolute;
+  margin-top:790px;
+  height:790px;
+  width:100%;
+  content:"";
+  background-color: #ffffff;
+}
+
+.projects{
+  position: absolute;
+  height:790px;
+  width: 100%;
+  margin-top:1580px;
+  content:"";
+  background-color: #E6CCA9;
+}
+
+.contact{
+  position:absolute;
+  height:790px;
+  width:100%;
+  margin-top:2370px;
+  content:"";
+  background-color: #142F43;
+  color: #ffffff;
+}
+
+.contact-square{
+  display:flex;
+  position: absolute;
+  height:500px;
+  width: 500px;
+  border:solid;
+  border-width: 5px;
+  border-color:#ffffff;
+  text-align:center;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  transition: 0.5s;
+}
+
+.contact-square:hover{
+  color: #142F43;
+  border-radius: 80%;
+  background-color:#ffffff;
+}
+
+footer{
+  color:white;
+  position: absolute;
+  display: flex;
+  height:50px;
+  width:100%;
+  text-align: center;
+  margin-top: 3160px;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto Mono', monospace;
+  background-color: #181D31;
+}
