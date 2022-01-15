@@ -1,0 +1,240 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.nav-bar{
+  color: #F7F7F7;
+  font-size: 14px;
+  position: absolute;
+  top: 90%;
+}
+
+.nav-bar ul{
+  display: flex;
+}
+
+.nav-bar ul li{
+  position: relative;
+  display: inline-block;
+  margin: 10px 50px;
+  list-style: none;
+  z-index: 1;
+}
+
+.nav-bar ul li a{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #2C272E;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+}
+
+.nav-bar ul li a:hover{
+  color:#FF7800;
+}
+
+.nav-bar ul li a .icon{
+  position: relative;
+  display: block;
+  transition: 0.5s;
+}
+
+.nav-bar ul li:hover a .icon{
+  transform: translateY(-10px);
+}
+
+.nav-bar ul li a .text{
+  position: absolute;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.nav-bar ul li:hover a .text{
+  opacity: 1;
+}
+
+
+html body{
+  margin: 0;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.top-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FEFBF3;
+  width: 100%;
+  height: 790px;
+}
+
+.hi{
+  position: absolute;
+  width: 80%;
+  color: #2C272E;
+  font-size: 50px;
+  text-align: center;
+  top: 20%;
+}
+
+.land-sentence{
+  position:absolute;
+  color: #2C272E;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.iam{
+  position: static;
+  font-size: 75px;
+  line-height: 5px;
+}
+
+.name {
+  color:#FF7800;
+}
+
+.auto-input{
+  color:#FF7800;
+}
+
+.about-me{
+  position: relative;
+  display: flex;
+  height:790px;
+  width:100%;
+  background-color: #FEFBF3;
+}
+
+.about-me h1{
+  margin: 0 50%;
+}
+
+.description{
+  position: relative;
+  width: 50%;
+  height: 80%;
+  border-right: solid;
+  border-color: black;
+}
+
+.intro{
+  position: absolute;
+  width: 60%;
+  height: 50%;
+  margin: 20% 20% 25% 20%;
+  text-align: right;
+  font-size: 20px;
+  line-height: normal;
+}
+
+.bio{
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 80%;
+}
+
+.bio h1{
+  margin: 0 50%;
+}
+
+.bio ul{
+  position: absolute;
+  margin: 25%;
+  width: 60%;
+  list-style: none;
+}
+
+.bio ul li{
+  line-height: 10px;
+  margin-bottom: 30px;
+}
+
+.project-section{
+  position: relative;
+  height:790px;
+  width: 100%;
+  background-color: #FEFBF3;
+}
+
+.projects{
+  position: relative;
+  width: 100%;
+}
+
+.projects h1{
+  margin-left: 50px;
+}
+
+.more-coming{
+  position: absolute;
+  width: 100%;
+  margin: 300px auto;
+  text-align: center;
+}
+
+
+.contact{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height:790px;
+  width:100%;
+  background-color: #FEFBF3;
+  color: #142F43;
+}
+
+.contact-square{
+  position: absolute;
+  height:500px;
+  width: 500px;
+  border:solid;
+  border-width: 5px;
+  border-color:#142F43;
+  transition: 0.5s;
+  top: 50%;
+  margin-top: -250px;
+}
+
+.contact-square h1{
+  width: 100%;
+  text-align: center;
+  margin-top: 50%;
+  margin-bottom: 50%;
+}
+
+.contact-square:hover{
+  color: #FF7800;
+  border-radius: 80%;
+  background-color:#142F43;
+}
+
+footer{
+  color:white;
+  position: relative;
+  display: flex;
+  height:50px;
+  width:100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto Mono', monospace;
+  background-color: #181D31;
+}
