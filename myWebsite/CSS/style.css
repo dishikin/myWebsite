@@ -122,16 +122,19 @@ html body{
   background-color: #FEFBF3;
 }
 
-.about-me h1{
-  margin: 0 50%;
-}
-
 .description{
   position: relative;
+  display: flex;
+  justify-content: center;
   width: 50%;
   height: 80%;
   border-right: solid;
-  border-color: black;
+  border-color: #2C272E;
+}
+
+.description h1{
+  width: max-content;
+  margin-top: 20px;
 }
 
 .intro{
@@ -146,13 +149,16 @@ html body{
 
 .bio{
   position: relative;
-  display: inline-block;
+  display: flex;
   width: 50%;
   height: 80%;
+  justify-content: center;
 }
 
 .bio h1{
-  margin: 0 50%;
+  margin: 0;
+  width: max-content;
+  margin-top: 20px;
 }
 
 .bio ul{
@@ -163,24 +169,45 @@ html body{
 }
 
 .bio ul li{
-  line-height: 10px;
+  line-height: 20px;
   margin-bottom: 30px;
 }
 
 .project-section{
   position: relative;
+  display: flex;
+  justify-content: center;
   height:790px;
   width: 100%;
   background-color: #FEFBF3;
 }
 
-.projects{
-  position: relative;
-  width: 100%;
+.project-title h1{
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 50px;
 }
 
-.projects h1{
-  margin-left: 50px;
+.projects{
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 250px 250px;
+  grid-gap: 20px;
+  border-color: red;
+}
+
+.gridContainer1,
+.gridContainer2,
+.gridContainer3,
+.gridContainer4,
+.gridContainer5,
+.gridContainer6{
+  border-color: #2C272E;
+  border: solid;
 }
 
 .more-coming{
