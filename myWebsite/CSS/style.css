@@ -117,7 +117,7 @@ html body{
 .about-me{
   position: relative;
   display: flex;
-  height:790px;
+  height:490px;
   width:100%;
   background-color: #FEFBF3;
 }
@@ -127,14 +127,14 @@ html body{
   display: flex;
   justify-content: center;
   width: 50%;
-  height: 80%;
+  height: 100%;
   border-right: solid;
   border-color: #2C272E;
 }
 
 .description h1{
   width: max-content;
-  margin-top: 20px;
+  margin-top: 10%;
 }
 
 .intro{
@@ -158,19 +158,55 @@ html body{
 .bio h1{
   margin: 0;
   width: max-content;
-  margin-top: 20px;
+  margin-top: 10%;
+  height: fit-content;
 }
 
-.bio ul{
+.table-div{
   position: absolute;
-  margin: 25%;
   width: 60%;
-  list-style: none;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  margin: 20% 20% 25% 20%;
 }
 
-.bio ul li{
-  line-height: 20px;
-  margin-bottom: 30px;
+.bio-table{
+  position: absolute;
+  width: 100%;
+}
+
+.bio-table tr{
+  height: 50px;
+}
+
+.bio-table th{
+  width: 20%;
+}
+
+.skills{
+  position: relative;
+  height: 300px;
+  width: 100%;
+  background-color: grey;
+
+}
+
+.skils-div{
+  position: relative;
+  width: 100%;
+}
+
+.java-grid,
+.pyton-grid,
+.html-grid,
+.css-grid{
+  display: inline-block;
+  border: solid;
+  border-color: black;
+  width: 20%;
+  height: 80%;
+  margin: 20px;
 }
 
 .project-section{
@@ -197,7 +233,6 @@ html body{
   grid-template-columns: 200px 200px 200px;
   grid-template-rows: 250px 250px;
   grid-gap: 20px;
-  border-color: red;
 }
 
 .gridContainer1,
@@ -251,6 +286,7 @@ html body{
   color: #FF7800;
   border-radius: 80%;
   background-color:#142F43;
+  cursor: pointer;
 }
 
 footer{
